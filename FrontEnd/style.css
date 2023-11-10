@@ -1,15 +1,8 @@
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; vertical-align: baseline; }
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+html, body, div, a, img, ul, li, footer, header, menu, nav { margin: 0; padding: 0; border: 0; vertical-align: baseline; }
 
 body { line-height: 1; }
 
-ol, ul { list-style: none; }
-
-blockquote, q { quotes: none; }
-
-blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+ul { list-style: none; }
 
 header { display: block; }
 
@@ -25,22 +18,9 @@ a:hover { text-decoration: none; }
 
 img { max-width: 100%; }
 
-caption { margin-bottom: 15px; }
+.button { height: 64px; width: 241px; border: none; color: #fff; position: relative; text-align: center; text-transform: uppercase; font-family: "AlbertusMedium"; filter: brightness(100%)}
 
-select:not(.form-control) { background: rgba(0, 0, 0, 0.3); width: 100%; border: 2px solid #21333c; outline: 2px solid #fff; outline-offset: -4px; padding: 4px; color: #fff; margin-bottom: 20px; padding: 15px 40px 15px 20px; position: relative; -webkit-appearance: none; background-image: url(../images/drop-icon.png); background-position: right 10px center; background-repeat: no-repeat; -moz-appearance: none; text-indent: 0.01px; text-overflow: ''; -ms-appearance: none; appearance: none !important; cursor: pointer; }
-
-.button { transition: all 0.3s ease; cursor: pointer; background: url(../images/button-blue.png) no-repeat; height: 64px; width: 241px; border: none; color: #fff !important; text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3); position: relative; z-index: 1; text-align: center; text-transform: uppercase; font-family: "AlbertusMedium"; filter: brightness(100%) drop-shadow(0px 10px 20px rgba(81, 87, 156, 0.8)); }
-.button:hover { filter: brightness(120%) drop-shadow(0px 0px 30px rgba(56, 114, 222, 0.4)); }
-.button { display: inline-block; text-decoration: none; line-height: 64px; text-decoration: none; }
-
-.button-small { background: url(../images/button-blue-small.png) no-repeat; width: 135px; height: 50px; line-height: 50px; }
-
-.button-medium { background: url(../images/button-blue-medium.png) no-repeat; width: 180px; height: 52px; line-height: 50px; }
-
-.button-green { width: 321px; background: url(../images/button-green.png) no-repeat; filter: brightness(100%) drop-shadow(0px 0px 30px rgba(150, 255, 57, 0.4)); }
-.button-green:hover { filter: brightness(120%) drop-shadow(0px 0px 30px rgba(150, 255, 57, 0.4)); }
-
-:focus { outline: none; }
+.button-small {width: 135px; height: 50px; line-height: 50px; }
 
 .container { max-width: 1200px; width: 1200px; margin: 0 auto; position: relative; height: 100%; }
 
@@ -54,9 +34,7 @@ select:not(.form-control) { background: rgba(0, 0, 0, 0.3); width: 100%; border:
 
 .flex-c-c { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; }
 
-.bright:hover { filter: brightness(120%); }
-
-.topPanel { position: fixed; top: 0; left: 0; right: 0; background: rgba(18, 23, 26, 0.9); height: 80px; z-index: 10; box-shadow: 0px 0px 6px rgba(0,0,0,0.4)}
+.topPanel { position: fixed; top: 0; left: 0; right: 0; background: rgba(18, 23, 26, 0.9); height: 80px; z-index: 10; box-shadow: 0px 0px 6px rgba(0,0,0,0.4);}
 .topPanel-left { height: 100%; }
 .topPanel-right { height: 100%; }
 
@@ -66,11 +44,10 @@ select:not(.form-control) { background: rgba(0, 0, 0, 0.3); width: 100%; border:
 .menu li { height: 100%; position: relative; }
 .menu li a { display: block; color: #ffffff; text-transform: uppercase; height: 100%; line-height: 80px; padding: 0px 40px; }
 .menu li a:hover { background-color: rgba(0, 0, 0, 0.2); color: #ffd399; }
-.menu li:after { content: ""; position: absolute; background: url(../images/menu-icon.png) no-repeat; width: 22px; height: 22px; top: 50%; margin-top: -11px; right: -11px; }
+.menu li:after { position: absolute; width: 22px; height: 22px; top: 50%; margin-top: -11px; right: -11px; }
 .menu li:last-child:after { display: none; }
 
 .sign-up { text-transform: uppercase; color: #ffffff; font-size: 17px; display: block; position: relative; padding: 20px 12px; }
-.sign-up:before { content: ""; position: absolute; background: url(../images/lock-icon.png) no-repeat; width: 40px; height: 40px; top: 50%; margin-top: -20px; left: -40px; }
 
 .login { margin: 0px 10px; }
 
@@ -104,26 +81,4 @@ select:not(.form-control) { background: rgba(0, 0, 0, 0.3); width: 100%; border:
   25% { bottom: -120px; transform: scale(0.7); opacity: 1; }
   50% { bottom: -60px; transform: scale(0.8); opacity: 1; }
   75% { bottom: 0; transform: scale(0.9); opacity: 0.5; }
-  to { bottom: 60px; transform: scale(1); opacity: 0; } }
-
-
-.m-register { text-align: center; }
-.m-register a { color: #ffdda3; font-size: 30px; text-transform: uppercase; }
-.m-register a:hover { color: #fff; }
-
-.btn-mobile { position: relative; transition: 0.3s; left: 15px; z-index: 23; display: none; }
-.btn-mobile span { display: block; width: 22px; height: 2px; margin: 6px 0px; background: white; position: relative; z-index: 22; border-radius: 3px; }
-.btn-mobile.active { left: 270px; top: -5px; }
-.btn-mobile.active span:nth-child(1) { transform: rotate(45deg); top: 8px; }
-.btn-mobile.active span:nth-child(2) { display: none; }
-.btn-mobile.active span:nth-child(3) { transform: rotate(-45deg); }
-
-.header-page { height: 700px; }
-.header-page .logo { top: 60px; }
-.header-page .online { top: 450px; }
-
-.page { line-height: 1.5; background: url(../images/media-bg.jpg) center bottom no-repeat; }
-
-.body-page { background: url(../images/fon-page-bg.jpg) center top no-repeat; }
-/*.body-page .header { height: 430px; }*/
-.body-page .header { height: 650px; }
+  to { bottom: 60px; transform: scale(1); opacity: 0; };}
