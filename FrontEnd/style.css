@@ -43,7 +43,7 @@ img { max-width: 100%; }
 .menu { height: 100%; }
 .menu li { height: 100%; position: relative; }
 .menu li a { display: block; color: #ffffff; text-transform: uppercase; height: 100%; line-height: 80px; padding: 0px 40px; }
-.menu li a:hover { background-color: rgba(0, 0, 0, 0.2); color: #ffd399; }
+.menu li a:hover { background-color: rgba(0, 0, 0, 0.2); color: #fdb04c;}
 .menu li:after { position: absolute; width: 22px; height: 22px; top: 50%; margin-top: -11px; right: -11px; }
 .menu li:last-child:after { display: none; }
 
