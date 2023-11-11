@@ -10,7 +10,7 @@ header { display: block; }
 
 html, body { position: relative; overflow-x: hidden; }
 
-body { width: 100%; background: url(img/top-fon.jpg) center top no-repeat; background-color: #ffffff; color: #2c3844; min-height: 100vh; }
+.bodyimg { width: 100%; background: url(img/top-fon.jpg) center top no-repeat; background-color: #ffffff; color: #2c3844; min-height: 100vh; }
 
 a { transition: all 0.3s ease; color: #d8d0cc; text-decoration: none; }
 
