@@ -1,14 +1,12 @@
 html, body, div, a, img, ul, li, footer, header, menu, nav { margin: 0; padding: 0; border: 0; vertical-align: baseline; }
 
-body { line-height: 1; }
-
 ul { list-style: none; }
 
 header { display: block; }
 
 * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
-html, body { position: relative; overflow-x: hidden; }
+body { position: relative; overflow-x: hidden; }
 
 .bodyimg { width: 100%; background: url(img/top-fon.jpg) center top no-repeat; background-color: #ffffff; color: #2c3844; min-height: 100vh; }
 
@@ -16,11 +14,22 @@ a { transition: all 0.3s ease; color: #d8d0cc; text-decoration: none; }
 
 a:hover { text-decoration: none; }
 
-img { max-width: 100%; }
+.loginbotao {
+  font-size: 17px; 
+  color: #fff; 
+  position: relative; 
+  text-align: center; 
+  text-transform: uppercase; 
+  margin: 0px 30px;
+}
 
-.button { height: 64px; width: 241px; border: none; color: #fff; position: relative; text-align: center; text-transform: uppercase; font-family: "AlbertusMedium"; filter: brightness(100%)}
-
-.button-small {width: 135px; height: 50px; line-height: 50px; }
+.cadastrarbotao { 
+  text-transform: uppercase; 
+  color: #ffffff; 
+  font-size: 17px; 
+  display: block; 
+  position: relative;
+}
 
 .container { max-width: 1200px; width: 1200px; margin: 0 auto; position: relative; height: 100%; }
 
@@ -46,10 +55,6 @@ img { max-width: 100%; }
 .menu li a:hover { background-color: rgba(0, 0, 0, 0.2); color: #fdb04c;}
 .menu li:after { position: absolute; width: 22px; height: 22px; top: 50%; margin-top: -11px; right: -11px; }
 .menu li:last-child:after { display: none; }
-
-.sign-up { text-transform: uppercase; color: #ffffff; font-size: 17px; display: block; position: relative; padding: 20px 12px; }
-
-.login { margin: 0px 10px; }
 
 .header { position: relative; height: 1050px; }
 
@@ -82,3 +87,28 @@ img { max-width: 100%; }
   50% { bottom: -60px; transform: scale(0.8); opacity: 1; }
   75% { bottom: 0; transform: scale(0.9); opacity: 0.5; }
   to { bottom: 60px; transform: scale(1); opacity: 0; };}
+
+  .corposubpage {
+    margin: auto 30%;
+    margin-top: 150px;
+  }
+
+  .dadosCadastro {
+    padding: 10px;
+    background-color: #00041679;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.829)
+  }
+
+  .cad-nome {
+    display: block;
+  }
+
+  .cad-botao {
+    margin: 15px 43%;
+  }
+
+  #b-cadastrar {
+    height: 30px;
+  }
+
